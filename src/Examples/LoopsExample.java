@@ -79,6 +79,24 @@ public class LoopsExample {
             System.out.println(num);
         }
         
+        
+        // adding calculator
+        // ask how many numbers
+        System.out.println("How many numbers do you want to add?");
+        int amount = input.nextInt();
+        
+        // create a variable to store the sum
+        int sum = 0;
+        
+        // loop through and get each number
+        for(int i = 0; i < amount; i++){
+            System.out.println("Please enter a number");
+            int n = input.nextInt();
+            // add it to the sum
+            sum = sum + n;
+        }
+        System.out.println("Total = " + sum);
+        
     }
     
 }
